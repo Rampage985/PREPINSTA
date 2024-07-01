@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Logo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .instagram-logo {
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            border-radius: 48px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .instagram-logo::before {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 70%;
+            border: 8px solid white;
+            border-radius: 42px;
+        }
+        .lens {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .lens::before {
+            content: '';
+            width: 58px;
+            height: 58px;
+            background: radial-gradient(circle at 15% , #ff0095, #FD1D1D, #FCB045);
+            transform: rotate(120deg);
+            border-radius: 50%;
+        }
+        .flash {
+            position: absolute;
+            top: 22%;
+            right: 23%;
+            width: 22px;
+            height: 22px;
+            background: white;
+            border-radius: 50%;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="instagram-logo">
+        <div class="lens"></div>
+        <div class="flash"></div>
+    </div>
+</body>
+</html>
