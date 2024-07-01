@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-like Product Listing Page</title>
+    <link rel="stylesheet" href="css_task3.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">GG STORES</div>
+            <input type="text" placeholder="Search">
+            <div class="nav-links">
+                <a href="#">All</a>
+                <a href="#">Best Sellers</a>
+                <a href="#">Today's Deals</a>
+                <a href="#">Customer Service</a>
+                <a href="#">New Releases</a>
+                <a href="#">Books</a>
+                <a href="#">Electronics</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="filters">
+            <h2>Filters</h2>
+            <div class="filter">
+                <h3>Category</h3>
+                <ul>
+                    <li><input type="checkbox" id="bath-additives"> <label for="bath-additives">Bath Additives</label></li>
+                    <li><input type="checkbox" id="bath-salts"> <label for="bath-salts">Bath Salts</label></li>
+                    <li><input type="checkbox" id="fertilizers"> <label for="fertilizers">Fertilizers & Plant Food</label></li>
+                </ul>
+            </div>
+            <div class="filter">
+                <h3>Customer Review</h3>
+                <ul>
+                    <li><input type="checkbox" id="4-stars-up"> <label for="4-stars-up">4 Stars & Up</label></li>
+                    <li><input type="checkbox" id="3-stars-up"> <label for="3-stars-up">3 Stars & Up</label></li>
+                </ul>
+            </div>
+            <div class="filter">
+                <h3>Price</h3>
+                <label for="price">$0 - $1000</label>
+                <input type="range" id="price" name="price" min="0" max="1000">
+            </div>
+        </aside>
+        <main class="product-list">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Product 1">
+                <div class="product-info">
+                    <h3>Product 1</h3>
+                    <p>This is a product</p>
+                    <p class="price">$199.99</p>
+                    <p class="rating">★★★★☆</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <div class="product-info">
+                    <h3>Product 2</h3>
+                    <p>This is a product</p>
+                    <p class="price">$299.99</p>
+                    <p class="rating">★★★☆☆</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Product 3">
+                <div class="product-info">
+                    <h3>Product 3</h3>
+                    <p>This is a product</p>
+                    <p class="price">$399.99</p>
+                    <p class="rating">★★★★★</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <!-- Add more product cards as needed -->
+        </main>
+    </div>
+</body>
+</html>
