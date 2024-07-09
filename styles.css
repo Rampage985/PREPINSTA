@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: rgb(9,121,116);
+background: linear-gradient(254deg, rgba(9,121,116,1) 0%, rgba(100,195,212,1) 99%); 
+    padding: 10px 0;
+}
+
+.ii{
+    background-color: #34978253;
+    height: 150px;
+    width: 100px;
+    border-radius: 10px;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+    
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #333333;
+    text-decoration: none;
+    float: left;
+    padding-bottom: 15px;
+    font-family: Andale Mono, monospace;
+    padding-left: 50px;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar-nav #sign{
+    background-color: #18caca;
+    border: 0.5px solid white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    padding: 5px;
+}
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 15px;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    
+}
+
+/* Header Section */
+.header-section {
+    background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F556416%2Fpexels-photo-556416.jpeg%3Fcs%3Dsrgb%26dl%3Dlandscape-mountains-nature-556416.jpg%26fm%3Djpg&f=1&nofb=1&ipt=2391cb81f7e79a1587a2cae112b76e7a950c191c3e8685b03881f9fdb1776cff&ipo=images') no-repeat center center/cover;
+   
+    padding: 150px 0;
+    text-align: center;
+    
+   
+}
+
+
+
+.header-title {
+    font-size: 3rem;
+    margin: 0;
+        
+    color: #19e7cf;
+    width: auto;
+    border-radius: 10px;
+    padding: 2px;
+    font-weight: normal;
+    
+    font-family: 'Courier New', Courier, monospace ;
+    font-weight: bold;
+}
+
+.header-subtitle {
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding-bottom: 200px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* font-weight: bold; */
+}
+
+/* Features Section */
+.features-section {
+    padding: 50px 0;
+    background: rgb(9,121,116);
+    background: linear-gradient(90deg, rgba(9,121,116,1) 13%, rgba(20,219,125,1) 50%, rgba(32,204,235,1) 94%);   
+}
+
+.feature-box {
+    background: rgb(9,121,116);
+background: linear-gradient(254deg, rgba(9,121,116,1) 35%, rgba(100,195,212,1) 100%); 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 15px;
+    text-align: left;
+    padding-left: 50px;
+    
+}
+
+.feature-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    float: left;
+    padding-right: 50px;
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    
+}
+
+.feature-description {
+    font-size: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 50px 0;
+    background: rgb(9,121,116);
+    background: linear-gradient(90deg, rgba(9,121,116,1) 13%, rgba(20,219,125,1) 50%, rgba(32,204,235,1) 94%); 
+    text-align: center;
+}
+
+.testimonial-box {
+    background: rgb(9,121,116);
+    background: linear-gradient(135deg, rgba(9,121,116,1) 29%, rgba(32,204,235,1) 90%); 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+}
+
+.testimonial-quote {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.testimonial-name {
+    font-size: 1.1rem;
+    margin: 10px 0 0;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #032e25;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-section p {
+    margin: 0;
+}

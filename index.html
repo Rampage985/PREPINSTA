@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictional Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div >
+            <a class="navbar-brand" href="#">TourGURUs.com</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#header">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#search">Search</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer">About Us</a></li>
+                <li class="nav-item" id="sign"><a class="nav-link" href="#footer">Sign IN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="header" class="header-section">
+        <div class="container text-center ii">
+            <h1 class="header-title">Welcome to TourGURUs</h1>
+            <p class="header-subtitle">We provide the best services for your next Tour, no mattar the place or time!!</p>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="feature-box">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAACOUlEQVR4Xu3b3VHDMBAEYEIF0AF0QAlpgU6gAugASqED6ISUQAWAjjEvkHjPuh+dZtYzfvLlLH3eKDYJuzNuqwI7+qwLEAgkhEAEsi0iTBATxATZBJggm592Dbpop3lo+77tN7ZTDn/1oY3gpe33mpFogR4XIE3PWWqeNUhaoPfW7GqWmSvH+dHqLlGtFugLNZr0OJw/LFgmHg8kI4k/y9/rCOcPC9KA3CN43jp+oq5w/rBgXiBk83Mczh8WEEgFPWB10I2ru2pZ8mBAYAETpLsG+Z8vunFZq2BAYMEyguQbRdUnkBXn0BpcoyZaoKfW6A41m+y4PI/dojFrgfat0StqNtlxwRGk1U0LJE3KpMjhplv1oKq6UfrDKymSNM28vS1vLXlYhduWBP02mxlpE05PgmZG2oxjAZLXzpSkLhwr0CxI3TgeQNWRTDheQFWRzDieQP+QHO5V4EfwSoELjjdQlSS54UQAjUZyxYkCGoXkjhMJlI0UghMNlIUUhpMBFI0UipMFFIUUjpMJ5I2UgpMN5IWUhjMCyIqUijMKqBcpHWck0FakITijgbRIw3AqACGkoThVgGQcp77alp/Iqb59kCYRW8+3GhHjOAU0fHzDB7BoEwjEjkAEsq1MTBATxATZBJggmx/XICaICbIJMEE2P65BHQlS/9DSdm3WX131YbUETtW/B5XBqQhUCqcaUDmcSkDyK37V/7FHLsjHeldZpLPnrT4fgQAVgQikfjcdLWSCmCBbgr4BXUd5SWbbmOoAAAAASUVORK5CYII=" class="feature-img">
+                <h3 class="feature-title">Easy to use</h3>
+                <p class="feature-description">Using to predefined search function and filter find the right place for your next trip.</p>
+            </div>
+            <div class="feature-box">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAADLUlEQVR4Xu3ajVXbMBAHcGACukHYADZoJ6CdgLJBmYB0gpYJSicoTEA3gA2aDdoJoPfn2a8hqU8n3YfkIL2nF0hkW/rlJJ/t7O/1wgrsdx9eoAMlIqQDdSDdItIjyCiC3tN+zqguqB7rvpPJrW/okxXVq+HV6TB5u01F0CHt7htVAEWWczrYdeQBp46VAvpRAWfs6wX98bU2Egf0cYiemn2sjsQB1Yye9S+lKhIH9GtYlGtGUPXpxgE9tSCz1ocqkTQnIFiFI80NKBzJEgiJ3vchyftDr0goT6nibGhdwiLJAggYSOwA9L8CqDuqSDotSwiSBdAHBmcEeTsgWQKFTDct0PUQPZKB45JldtNNCySJnhEP13NIPj2K23TTAh3RaFfCEWMN+s22RW/Ksy8XpLaAhNJMM3MkLVDObQmvhXrTyxRJC4RTO9YhSVlSo0tJw7I2L+anGZIWCGN5R/VnYlCIHizQ1rkQd1gTJAsgJIqIoikk4OAUvyiLDNVWaiQLoHEEuPt3S/VheGP9UkMRObpTG/VFhWQJpPqqnTcuRnotQPAvQtoNoAMa/qMoBrORTIDk/RMNwrtRFpIJkPeIHPYvRnqtQDCX5G97bkD/pl2zExD525tUdHJA97Sx13P4VL+iPk9GEQf0hXr5Kaqn/HHUyeLU7pNrEQeUvn/Thp6mF59p4yW3Aw4I25ndBWx0JUreEU0BAamhqaYJlq1tV/TOCVUs1pNFAjSN5LY0GECk+5aMHvRCCrRrkYQ7D1igkyUHaFeQxDi5ETRqz3lNysIpBZprJGXjaIDmhlSEowVqFGnr9FWMYwG0jdRWRqjCsQJqNJKef0IsOpVbJIrJfIEatHR2M8GxjKCWUgAzHA8g4+mWvaCZ4ngBGSNJZvdzG3McT6BoJBccb6AoJDecCCBvJFecKCAvJHecSCBrpBCcaCArpDCcGkBapFCcWkClSOE4NYFykarg1AaSIlXDaQEIfcDzf/wCdrFxUYHnVfgd9s3G+6H/5j7V8OwcnuICCY+8gbKiyj7U8+zMuO+WgCLGm32MDpQg60AdKHtWvdigR1CPoB5BOoEeQTq/v4UCpEninnL7AAAAAElFTkSuQmCC" class="feature-img">
+                <h3 class="feature-title">Best Prices</h3>
+                <p class="feature-description">We have the best prices amoung all the other websites.</p>
+            </div>
+            <div class="feature-box">
+               <img src="data:image/png;base64,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" class="feature-img">
+                <h3 class="feature-title">Trusted By Millions</h3>
+                <p class="feature-description">In business since 1999, we are the most trusted and exprienced amoung other websites.</p>
+            </div>
+            <div class="feature-box">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAADVklEQVR4Xu2b/VkTQRDGE20AOqAESoAKhAqECtAKhArUCqADtQLTAXZgOtAGFOf1DpKQ3Z2Z/b5j9nn2jyRzO7O/fWc/8twuF1aCBJbGJ0zAADEKMUAGKG0SMQWZgkxBaQRMQWn8tHPQCblDfUP1iOqBzP0rMvsrMpVbss2tyeIH1W9U71hrj4EUEEB8oPrO6+g1/fInNoyCzw3EAeqU6m+tJwmgY2r0y6gYbfs92a9GSKqYOEBQzneqgOQt2dIC0TwU9XSpTTcO0MdgWqnGwmc8UGHZPD2eNBxfqZlzTdghQGdjai0WY0yq0OQ9lsWbpz3MQYcyh4NVCNA1/Y6JeaeMkO7oy89UMfn1WnzJymXNTn9Cxvdk6Zp7PtH373ulshXXHqBRhNkA/SRnRw4QyGHkcu+luIJ8DrCfWPVOh+JrBgjzD5bL3kszQACDeeiGqnpnWpFqU0Dyfqr2Bkyzj9NrcDPJhrYmC/EZLTSjp4XBxplokGdfxJ7RpgvIwTeSGRYcLDzOMitAXk3y5LxntJcBiMvmJe3rHtxntFkBSlgPvGe0CQPi84YTzrPfnSwmDEjZ/aD5f+3NFVA2JdUHlC3056MvmWz0zusDypkEFdpKBTQMiWTwKnRmcJE3mFRA1brdypEBEh6Fd8yqLPN5M6GYwGarIN8ga/+NKAAI0kAY2lAiRBBQYYeA+sqZhoD6ArGru01sDQFFpELaI1Ej8pIAKfEOe1cDFLN/iVg6CqxiygEvZN5YQb5Tsf60XIiPJMVEc1vvCoom3lJBIvJFlKHw3BLQpu/R41sEn+g8qd3fl0mxjsFph6YMIG0UIvs21CcESEQxu5EBitlwVvnDLN9YF/1ffFoK4pd53kI5MGpAv8jBQfYwlFHrzJOiVQPyvQasi3k61mpAt9S3iyz9a7Nsa0NXA9pcRdC62rOXEUpKEDbGYOtRr7/AZbU0kyFkKTgMRNhX9OCpq/XQMg97XIfCG/fCm4UxHejimRuK4joGEJ45oYo7Y3MtUA+uVzjf+eYU9AgFl1quqF7MjBLgXFJd+/olBbQN6i19ADAoayiiNN8PIfKxp4Yi5y0oZftF8uBtAS2gmQmI744BYhgZIAPEp1HIwhRkCjIFpREwBaXxszmI4fcPoeWuSdpRMo8AAAAASUVORK5CYII=" class="feature-img">
+                 <h3 class="feature-title">30 days Refund Policy</h3>
+                 <p class="feature-description">Cannot go because of emergency? No problem, we got you coverd by our best in class no questions ask refund policy.</p>
+
+
+             </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="testimonial-box">
+                <p class="testimonial-quote">"This is an amazing product! Highly recommend."</p>
+                <h5 class="testimonial-name">- John Doe</h5>
+            </div>
+            <div class="testimonial-box">
+                <p class="testimonial-quote">"Exceptional service and quality. I'm very satisfied."</p>
+                <h5 class="testimonial-name">- Jane Smith</h5>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="footer-section">
+        <div class="container">
+            <p>&copy; 2024 TourGURUs. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
