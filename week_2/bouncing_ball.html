@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <style>
+        .loader {
+            width: 100px;
+            aspect-ratio: 2;
+            background: no-repeat radial-gradient(circle closest-side, #000 90%, transparent) 0% 50%,
+                        no-repeat radial-gradient(circle closest-side, #000 90%, transparent) 50% 50%,
+                        no-repeat radial-gradient(circle closest-side, #000 90%, transparent) 100% 50%;
+            background-size: calc(100% / 3) 50%;
+            animation: moveLoader 1s infinite linear;
+        }
+
+        @keyframes moveLoader {
+            20% { background-position: 0% 0%, 50% 50%, 100% 50%; }
+            40% { background-position: 0% 100%, 50% 0%, 100% 50%; }
+            60% { background-position: 0% 50%, 50% 100%, 100% 0%; }
+            80% { background-position: 0% 50%, 50% 50%, 100% 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Squares Loader</title>
+   <style>body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.loader {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.square {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #34dba1;
+    animation: grow-shrink 1.2s infinite ease-in-out;
+}
+
+.square:nth-child(1) {
+    top: 0;
+    left: 0;
+    animation-delay: 0s;
+}
+
+.square:nth-child(2) {
+    top: 0;
+    right: 0;
+    animation-delay: 0.3s;
+}
+
+.square:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    animation-delay: 0.6s;
+}
+
+.square:nth-child(4) {
+    bottom: 0;
+    left: 0;
+    animation-delay: 0.9s;
+}
+
+@keyframes grow-shrink {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+</style>
+</head>
+<body>
+    <div class="loader">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+</body>
+</html>
