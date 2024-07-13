@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #98dbc5;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #submit_bt{
+        background-color: #98dbc5;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 50vh;
+    }
+   
+</style>
+    <title>Fortune Teller</title>
+</head>
+<body>
+    <h1>Fortune Teller</h1>
+    <form id="fortuneForm">
+        <label for="numChildren">Number of Children:</label>
+        <input type="number" id="numChildren" name="numChildren" required><br><br>
+
+        <label for="partnerName">Partner's Name:</label>
+        <input type="text" id="partnerName" name="partnerName" required><br><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle" required><br><br>
+
+        <button type="submit" id="submit_bt">Tell My Fortune</button>
+    </form>
+
+    <h2>Your Fortune:</h2>
+    <p id="fortuneOutput"></p>
+
+    <script >function tellFortune(numChildren, partnerName, location, jobTitle) {
+        const fortune = `You will be a ${jobTitle} in ${location}, and married to ${partnerName} with ${numChildren} kids.`;
+        return fortune;
+    }
+    
+    document.getElementById('fortuneForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        const numChildren = document.getElementById('numChildren').value;
+        const partnerName = document.getElementById('partnerName').value;
+        const location = document.getElementById('location').value;
+        const jobTitle = document.getElementById('jobTitle').value;
+    
+        const fortune = tellFortune(numChildren, partnerName, location, jobTitle);
+        document.getElementById('fortuneOutput').textContent = fortune;
+    });
+    </script>
+</body>
+</html>

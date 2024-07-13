@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #98dbc5;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        #submit_bt{
+            background-color: #98dbc5;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 50vh;
+        }
+    </style>
+    <title>Distance Converter</title>
+</head>
+<body>
+    <h1>Distance Converter</h1>
+    <form id="distanceForm">
+        <label for="distance">Distance:</label>
+        <input type="number" id="distance" name="distance" step="0.01" required><br><br>
+
+        <label for="conversionType">Convert to:</label>
+        <select id="conversionType" name="conversionType">
+            <option value="metersToFeet">Meters to Feet</option>
+            <option value="feetToMeters">Feet to Meters</option>
+        </select><br><br>
+
+        <button type="submit"  id="submit_bt">Convert</button>
+    </form>
+
+    <h2>Conversion Result:</h2>
+    <p id="conversionOutput"></p>
+
+    <script>
+        // Function to convert meters to feet
+function metersToFeet(meters) {
+    const feet = meters * 3.281;
+    return `${meters} meters is equal to ${feet.toFixed(2)} feet.`;
+}
+
+// Function to convert feet to meters
+function feetToMeters(feet) {
+    const meters = feet * 0.3048;
+    return `${feet} feet is equal to ${meters.toFixed(2)} meters.`;
+}
+
+document.getElementById('distanceForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const distance = document.getElementById('distance').value;
+    const conversionType = document.getElementById('conversionType').value;
+
+    let result;
+    if (conversionType === 'metersToFeet') {
+        result = metersToFeet(distance);
+    } else {
+        result = feetToMeters(distance);
+    }
+
+    document.getElementById('conversionOutput').textContent = result;
+});
+
+    </script>
+</body>
+</html>

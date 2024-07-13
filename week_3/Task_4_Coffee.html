@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #98dbc5;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        #submit_bt{
+            background-color: #98dbc5;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 50vh;
+        }
+    </style>
+    <title>Coffee Consumption Calculator</title>
+</head>
+<body>
+    <h1>Coffee Consumption Calculator</h1>
+    <form id="coffeeForm">
+        <label for="age">Your Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="cupsPerDay">Cups of Coffee per Day:</label>
+        <input type="number" id="cupsPerDay" name="cupsPerDay" step="0.1" required><br><br>
+
+        <button type="submit" id="submit_bt">Calculate</button>
+    </form>
+
+    <h2>Your Coffee Consumption:</h2>
+    <p id="coffeeOutput"></p>
+
+    <script>
+        function calculateCoffeeSupply(age, cupsPerDay) {
+    const maxAge = 100;
+    const yearsRemaining = maxAge - age;
+    const totalCups = Math.round(cupsPerDay * 365 * yearsRemaining);
+    return `You will need ${totalCups} cups of coffee to keep you awake until the age of ${maxAge}.`;
+}
+
+document.getElementById('coffeeForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const age = document.getElementById('age').value;
+    const cupsPerDay = document.getElementById('cupsPerDay').value;
+
+    const result = calculateCoffeeSupply(age, cupsPerDay);
+    document.getElementById('coffeeOutput').textContent = result;
+});
+
+    </script>
+</body>
+</html>

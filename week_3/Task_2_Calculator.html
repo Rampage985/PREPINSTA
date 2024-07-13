@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Age Calculator</title>
+    
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #98dbc5;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        #submit_bt{
+            background-color: #98dbc5;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 50vh;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Pet Age Calculator</h1>
+    <form id="petAgeForm">
+        <label for="petAge">Pet's Age (in human years):</label>
+        <input type="number" id="petAge" name="petAge" required><br><br>
+
+        <label for="conversionRate">Conversion Rate:</label>
+        <input type="number" id="conversionRate" name="conversionRate" value="7" required><br><br>
+
+        <button type="submit" id="submit_bt">Calculate Pet Age</button>
+    </form>
+
+    <h2>Your Pet's Age:</h2>
+    <p id="petAgeOutput"></p>
+
+    <script >function calculatePetAge(petAge, conversionRate = 7) {
+        const petYears = petAge * conversionRate;
+        return `Your pet is ${petYears} years old in pet years!`;
+    }
+    
+    document.getElementById('petAgeForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        const petAge = document.getElementById('petAge').value;
+        const conversionRate = document.getElementById('conversionRate').value;
+    
+        const result = calculatePetAge(petAge, conversionRate);
+        document.getElementById('petAgeOutput').textContent = result;
+    });
+    </script>
+</body>
+</html>
