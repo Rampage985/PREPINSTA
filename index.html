@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+
+   
+
+    <title>Portfolio</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Abir</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Abir Lal Mukherjee</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Computer Application Student trying to learn more stuff about new technologies.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Hire Me</button>
+                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="social_icons">
+                <a href="https://www.linkedin.com/in/abir-lal-mukherjee" target="_blank">
+                <div class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB4klEQVRIS71V23XCMAyVbf5LNsgIjEA3aDegG3STdgPYADYoG8AI2aD8t457JTtOnMQk5Rxwa44tW7q6ejiK7jzUne3TgwEM7cnSS8NKY1HzJi7STStmP12jdsTiudmkDDQ5UYLVROX/cYx2UwAFN6IjxJ5UmBsNOGHChxousAdhtI4kLmUAWp4H6L8GG1sG6VKKpkZpGly3OQAFF/FvaIdcvDEArm8tA+SGmMKPa6l7gR/9KmpvLeiTfuUOG1+O289mahLgAoNnIUu0QtSXiPqRQbAusWbAM2aFueLpKyoJ3jUGBjmwbQ4UWDxRQRf8kZQxG2YAGQuiD5B977CcZBCTLDlQelO6uoBVBsiN704o5wNAyVdRCQZVBPiCbI3JLNkZDAWZY5lsGi96SQ5V5JUkRNrQtraS6AKTGXC8T6ETBuWsfEHlADSqSFTTEPlKagA4B/vg4Zgj1xjEPh42WgQwALADgBjKayHqtEsewKCKHBj4GHXuaeSqZqZzGCgouuSpKMGg8jkIIZKaH3NkBoBCvTjfWHgr1tpKc+3k4SALLKkgrpUKTXCkH5GzjM/mAAzelqDX+zRE6WAxXkWQnlBhaH3/JEn7T30YeufgcsDz0oT30Z/MPOWbT/rP9c2Gcop/HsedGVs1NxMAAAAASUVORK5CYII="/> </div>
+                </a>
+
+                <a href="https://github.com/Rampage985" >
+                <div class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB7ElEQVRIS7WVwVHDMBBF5cCBo+nAdBA6MBUAFRA6CBUQKggdJFQAVABUAB3gDsiRAyT8Z0vORtjGYSY7sziSVvv/fq1E4nZsyY7zu78AUhEYyi/8N/OEFvq+yR/l8y6SrQAH+y7//HJTn7grR6HFmzagNoCJNlxvKd+t4q/iPU0AYwXB/D+GXJd2YwxwpsV7H/Cg7538VD6So/vCDfR36TITgzxUy17sXM7e0mKAV80NfRJbMoeNAVKaJjINCj+0VRNz2AQgBonYr8IaLGDTx2JZkWkeVzDTxMhkO9Hv5z7Zq4Lch4mtyVmJnhSQV6qt6PHjnslDmN9fDmuZLMC7FjIfvY08ASBWoMxtASixPMw9SfPtHBJtY3Rf6KQ6twWoOqiyjU7oiWIVKLTnKK6Ay0U3BONW0qp9bKTrMVuuIxsPOVyyhcpKfbN2gmSKE1X2TSV2uu7w8jbP4woYUybngP72dhIMWH3R9BvNczFPDXNyIA8dWMbGNznXHO3GIhoiGwwpeeONcW6gtWUtaaLrv9Ib4onU0jY9dhPPHtZRUvbXFuLsnH1eyvm25xpNx6LEhcNf5ABai58HkvPwWRk7/6PRsuicyX8x01wAICHnExPorMAy5QwKX4mdBziXcz4brG1Qm0SRGv8f7hzgBz3BahlbMfq0AAAAAElFTkSuQmCC"/></div>
+                </a>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="https://www.pngplay.com/wp-content/uploads/12/User-Avatar-Profile-PNG-Free-File-Download.png" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>I'm an aspiring web developer trying to learn different things related to web development. I also have a passion for learning about new technologies and computer-related stuff. In my free time, I enjoy learning about PC hardware, reading, and exploring new technologies.
+                    </p>
+                    <div class="about-btn">
+                        <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Python</span>
+                        <span>JAVA</span>
+                        <span>Javascript</span>
+                        <span>C</span>
+                    </div>
+                </div>
+                
+          </div>
+       </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                
+                <h3>Completed</h3>
+                <label>15+ Finished Projects</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-users-alt"></i>
+                <h3>Clients</h3>
+                <label>25+ Happy Clients</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-award"></i>
+                <h3>Experience</h3>
+                <label>7+ Years in the field</label>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: abirlalmukherjee985@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Phone No.: +91 9875656512</p>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Name">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </section>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Abir Lal Mukherjee</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <a href="https://www.linkedin.com/in/abir-lal-mukherjee" target="_blank">
+            <div class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB4klEQVRIS71V23XCMAyVbf5LNsgIjEA3aDegG3STdgPYADYoG8AI2aD8t457JTtOnMQk5Rxwa44tW7q6ejiK7jzUne3TgwEM7cnSS8NKY1HzJi7STStmP12jdsTiudmkDDQ5UYLVROX/cYx2UwAFN6IjxJ5UmBsNOGHChxousAdhtI4kLmUAWp4H6L8GG1sG6VKKpkZpGly3OQAFF/FvaIdcvDEArm8tA+SGmMKPa6l7gR/9KmpvLeiTfuUOG1+O289mahLgAoNnIUu0QtSXiPqRQbAusWbAM2aFueLpKyoJ3jUGBjmwbQ4UWDxRQRf8kZQxG2YAGQuiD5B977CcZBCTLDlQelO6uoBVBsiN704o5wNAyVdRCQZVBPiCbI3JLNkZDAWZY5lsGi96SQ5V5JUkRNrQtraS6AKTGXC8T6ETBuWsfEHlADSqSFTTEPlKagA4B/vg4Zgj1xjEPh42WgQwALADgBjKayHqtEsewKCKHBj4GHXuaeSqZqZzGCgouuSpKMGg8jkIIZKaH3NkBoBCvTjfWHgr1tpKc+3k4SALLKkgrpUKTXCkH5GzjM/mAAzelqDX+zRE6WAxXkWQnlBhaH3/JEn7T30YeufgcsDz0oT30Z/MPOWbT/rP9c2Gcop/HsedGVs1NxMAAAAASUVORK5CYII="/></div>
+        </a>
+        <a href="https://github.com/Rampage985" >
+            <div class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB7ElEQVRIS7WVwVHDMBBF5cCBo+nAdBA6MBUAFRA6CBUQKggdJFQAVABUAB3gDsiRAyT8Z0vORtjGYSY7sziSVvv/fq1E4nZsyY7zu78AUhEYyi/8N/OEFvq+yR/l8y6SrQAH+y7//HJTn7grR6HFmzagNoCJNlxvKd+t4q/iPU0AYwXB/D+GXJd2YwxwpsV7H/Cg7538VD6So/vCDfR36TITgzxUy17sXM7e0mKAV80NfRJbMoeNAVKaJjINCj+0VRNz2AQgBonYr8IaLGDTx2JZkWkeVzDTxMhkO9Hv5z7Zq4Lch4mtyVmJnhSQV6qt6PHjnslDmN9fDmuZLMC7FjIfvY08ASBWoMxtASixPMw9SfPtHBJtY3Rf6KQ6twWoOqiyjU7oiWIVKLTnKK6Ay0U3BONW0qp9bKTrMVuuIxsPOVyyhcpKfbN2gmSKE1X2TSV2uu7w8jbP4woYUybngP72dhIMWH3R9BvNczFPDXNyIA8dWMbGNznXHO3GIhoiGwwpeeONcW6gtWUtaaLrv9Ib4onU0jY9dhPPHtZRUvbXFuLsnH1eyvm25xpNx6LEhcNf5ABai58HkvPwWRk7/6PRsuicyX8x01wAICHnExPorMAy5QwKX4mdBziXcz4brG1Qm0SRGv8f7hzgBz3BahlbMfq0AAAAAElFTkSuQmCC"/></div>
+        </a>
+        </div>
+       
+    </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script >/* ----- NAVIGATION BAR FUNCTION ----- */
+        function myMenuFunction(){
+            var menuBtn = document.getElementById("myNavMenu");
+        
+            if(menuBtn.className === "nav-menu"){
+              menuBtn.className += " responsive";
+            } else {
+              menuBtn.className = "nav-menu";
+            }
+          }
+        
+        /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
+          window.onscroll = function() {headerShadow()};
+        
+          function headerShadow() {
+            const navHeader =document.getElementById("header");
+        
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop >  50) {
+        
+              navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)";
+              navHeader.style.height = "70px";
+              navHeader.style.lineHeight = "70px";
+        
+            } else {
+        
+              navHeader.style.boxShadow = "none";
+              navHeader.style.height = "90px";
+              navHeader.style.lineHeight = "90px";
+        
+            }
+          }
+        
+        
+        /* ----- TYPING EFFECT ----- */
+         var typingEffect = new Typed(".typedText",{
+            strings : ["Student","Learner","Developer"],
+            loop : true,
+            typeSpeed : 100, 
+            backSpeed : 80,
+            backDelay : 2000
+         })
+        
+        
+        /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
+         const sr = ScrollReveal({
+                origin: 'top',
+                distance: '80px',
+                duration: 2000,
+                reset: true     
+         })
+        
+        /* -- HOME -- */
+        sr.reveal('.featured-text-card',{})
+        sr.reveal('.featured-name',{delay: 100})
+        sr.reveal('.featured-text-info',{delay: 200})
+        sr.reveal('.featured-text-btn',{delay: 200})
+        sr.reveal('.social_icons',{delay: 200})
+        sr.reveal('.featured-image',{delay: 300})
+        
+        
+        /* -- PROJECT BOX -- */
+        sr.reveal('.project-box',{interval: 200})
+        
+        /* -- HEADINGS -- */
+        sr.reveal('.top-header',{})
+        
+        /* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
+        
+        /* -- ABOUT INFO & CONTACT INFO -- */
+        const srLeft = ScrollReveal({
+          origin: 'left',
+          distance: '80px',
+          duration: 2000,
+          reset: true
+        })
+        
+        srLeft.reveal('.about-info',{delay: 100})
+        srLeft.reveal('.contact-info',{delay: 100})
+        
+        /* -- ABOUT SKILLS & FORM BOX -- */
+        const srRight = ScrollReveal({
+          origin: 'right',
+          distance: '80px',
+          duration: 2000,
+          reset: true
+        })
+        
+        srRight.reveal('.skills-box',{delay: 100})
+        srRight.reveal('.form-control',{delay: 100})
+        
+        
+        
+        /* ----- CHANGE ACTIVE LINK ----- */
+        
+        const sections = document.querySelectorAll('section[id]')
+        
+        function scrollActive() {
+          const scrollY = window.scrollY;
+        
+          sections.forEach(current =>{
+            const sectionHeight = current.offsetHeight,
+                sectionTop = current.offsetTop - 50,
+              sectionId = current.getAttribute('id')
+        
+            if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) { 
+        
+                document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
+        
+            }  else {
+        
+              document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        
+            }
+          })
+        }
+        
+        window.addEventListener('scroll', scrollActive)</script>
+</body>
+</html>
