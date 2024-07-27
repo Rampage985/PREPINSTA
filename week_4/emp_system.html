@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+     
+    background: rgb(59, 204, 189);
+
+    
+
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #0093E9;
+background-image: linear-gradient(315deg, #0093E9 0%, #00ffe2 100%);
+
+
+
+    height: 40vh;
+
+}
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    margin: 0;
+}
+
+button {
+    display: inline-block;
+    height: 70px;
+    width: 25%;
+    font-size: 18px;
+    font-family:monospace;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    background-color: #08857d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    margin-left: 8px;
+    border: 2px solid rgb(8, 178, 147);
+    border-radius: 20px;
+    text-align: center;
+    font-family:monospace;
+    font-size:x-large;
+    width: 490px;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    text-justify: auto;
+    float: right;
+    background: #0d9bc7;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Management System</h1>
+        <hr>
+        <div id="output"></div>
+        <button onclick="calculateAverageSalary()">Calculate Average Salary</button>
+        <button onclick="findEmployeesByDepartment('Marketing')">Find Employees in Marketing</button>
+        <button onclick="findEmployeesByDepartment('HR')">Find Employees in HR</button>
+        <button onclick="findEmployeesByDepartment('IT')">Find Employees in IT</button>
+        <button onclick="increaseSalary(10)">Increase Salaries by 10%</button>
+        <button onclick="decreaseSalary(10)">Decrease Salaries by 10%</button>
+        <button onclick="sortEmployeesByAge()">Sort Employees by Age</button>
+        <button onclick="showAllEmployeesname()">All Employees Name</button>
+
+    </div>
+</body>
+<script src="emp_JS.js">
+</script>
+</html>
