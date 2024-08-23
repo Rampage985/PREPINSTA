@@ -7,3 +7,5 @@ Week3 Project deployed link: https://rampage985.github.io/week3_prepinsta/
 Week4 Project deployed link: https://rampage985.github.io/week_4_prepinsta/
 <br><br>
 Week5 Project deployed link: https://rampage985.github.io/week_5_prepinsta/
+<br><br>
+Week6 Project deployed link: https://rampage985.github.io/week_6_prepinsta/
