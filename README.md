@@ -13,3 +13,5 @@ Week6 Project deployed link: https://rampage985.github.io/week_6_prepinsta/
 Week 7 Link: https://main--shop3youi.netlify.app/
 <br><br>
 Week_7 travle website: https://week-7-prep.vercel.app/
+<br><br>
+Week 8 Link: https://week-8-prep.vercel.app/
